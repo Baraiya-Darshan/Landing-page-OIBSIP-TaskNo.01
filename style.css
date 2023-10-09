@@ -1,0 +1,381 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Lora', serif;
+  }
+
+  body {
+      background-color: rgba(0, 0, 255, 0.089);
+  }
+
+  /* header */
+  .banner {
+      width: 100%;
+      height: 100vh;
+      background-image: url('https://i.pinimg.com/564x/e6/39/73/e639739ff94c50730780605ab177edae.jpg');
+      background-size: cover;
+      background-position: center center;
+
+
+  }
+
+  .banner .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+  }
+
+  .navbar .language .fa-globe {
+      color: white;
+      font-size: 25px;
+      padding: 0px 5px;
+  }
+
+  .navbar .language select {
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: 22px;
+  }
+
+  .navbar .language select:focus {
+      border: none;
+      outline: none;
+  }
+
+  .navbar .language option {
+      color: black;
+      font-size: 15px;
+
+  }
+
+  .header-content {
+      text-align: center;
+      margin: 80px 0px;
+  }
+
+  .header-content h1 {
+      font-size: 70px;
+      padding: 10px 10px;
+      color: white
+  }
+
+  .header-content h4 {
+      font-size: 22px;
+      padding: 10px 10px;
+      color: white;
+  }
+
+  .header-content p {
+    color: white;
+}
+
+  .btn {
+      background-color: rgb(2, 85, 2);
+      color: white;
+      font-size: 15px;
+      padding: 10px 20px;
+      border-radius: 30px;
+      outline: none;
+      border: 1px solid white;
+      margin: 15px 0px 20px 0px;
+  }
+
+  .btn:hover {
+      background-color: rgb(2, 146, 2);
+      box-shadow: 1px 0px 10px white;
+  }
+
+
+  /* functions */
+  .funtions {
+      margin: 100px 100px;
+  }
+
+  .funtions .fun-card {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      padding-bottom: 50px;
+
+  }
+
+  .fun-card .func-img {
+      width: 50%;
+      padding: 0px 50px;
+
+  }
+
+  .fun-card .func-img img {
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
+  }
+
+  .fun-card .fun-text {
+      width: 50%;
+      padding: 0px 50px;
+  }
+
+  .fun-text h2 {
+      font-size: 30px;
+      width: 75%;
+  }
+
+  .fun-text p {
+      padding: 12px 0px;
+      line-height: 25px;
+  }
+
+  .fun-text .app-download .fa-brands {
+      color: black;
+      background-color: darkgray;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px
+  }
+
+  .fun-text .app-download .fa-brands:hover {
+      background-color: green;
+  }
+
+  .fun-text .app-download a {
+      color: green;
+  }
+
+
+  /* features */
+  .features {
+      margin: 0px 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+
+  .fea-card {
+      width: 30%;
+      min-width: 200px;
+      text-align: center;
+      margin: 10px;
+      padding: 10px 12px 0px 12px;
+  }
+
+  .fea-card img {
+      width: 100%;
+      border-radius: 100px 100px;
+      height: 200px;
+  }
+
+  .fea-card .fea-txt h2 {
+      font-size: 25px;
+      padding: 5px 0px;
+
+  }
+
+  .advantage a {
+      display: block;
+      padding: 50px 0px;
+      width: 250px;
+      color: green;
+      margin: auto;
+      font-size: 22px;
+  }
+
+
+  /* server */
+  .server {
+      background-image: url('imges/location.jpg');
+      width: 100%;
+      height: 75vh;
+      background-size: cover;
+      background-position: center center;
+  }
+
+  .server h1 {
+      width: 700px;
+      margin: auto;
+      color: white;
+      text-align: center;
+      text-shadow: 1px 0px 10px white;
+      padding: 50px 0px;
+      font-size: 2.5rem;
+
+  }
+
+  .server .count {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 0px 100px;
+  }
+
+  .server .count h2 {
+      color: white;
+      text-shadow: 1px 0px 10px white;
+      font-size: 40px;
+      margin-top: 8px;
+  }
+
+  .server .count p {
+      color: white;
+      text-shadow: 1px 0px 10px white;
+  }
+
+  .server a {
+      display: block;
+      width: 350px;
+      margin: auto;
+      color: white;
+      text-shadow: 1px 0px 10px white;
+  }
+
+
+
+  /* media Query */
+
+  /* tablet size */
+  @media (max-width:860px) {
+
+      /* banner */
+      .banner {
+          height: 100vh;
+      }
+
+      .header-content h1 {
+          font-size: 50px;
+          padding: 7px 83px;
+      }
+
+      .header-content h4 {
+          font-size: 20px;
+          padding: 6px 10px;
+      }
+
+      /* function */
+      .funtions {
+          margin: 50px 50px;
+      }
+
+      .fun-text h2 {
+          font-size: 22px;
+          width: 80%;
+      }
+
+      /* server */
+      .server {
+          height: 100vh;
+    
+      }
+
+      .server h1 {
+          width: 100%;
+          font-size: 200%;
+      }
+
+      .server a {
+          padding-top: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+
+      /*features */
+      .features {
+          margin: 5px auto;
+          flex-direction: column;
+      }
+
+      .fea-card {
+          width: 75%;
+      }
+
+      .fea-card img {
+          width: 100%;
+          border-radius: 100px 100px;
+          height: 200px;
+      }
+  }
+
+
+  /* mobile size */
+  @media (max-width:600px) {
+
+    .banner {
+        height: 80vh;
+    }
+    
+      .banner .navbar img {
+          margin-right: 50px;
+          width: 200px;
+         padding-bottom: 5px;
+      }
+
+      .banner .navbar {
+          padding: 20px 15px;
+          flex-direction: column;
+         
+      }
+
+
+      .navbar .language{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .navbar .language .fa-globe {
+          font-size: 18px;
+          padding: 0px 0px;
+      }
+
+      .navbar .language select {
+          font-size: 18px;
+      }
+
+      .navbar .language option {
+          font-size: 13px;
+      }
+
+      .header-content {
+          text-align: center;
+          margin: 80px 0px;
+      }
+
+      .header-content h1 {
+          font-size: 40px;
+          padding: 10px 10px;
+      }
+
+      .header-content h4 {
+          font-size: 18px;
+      }
+
+
+      /* function */
+      .funtions .fun-card {
+          flex-direction: column;
+          padding-bottom: 50px;
+      }
+
+      .fun-card .func-img {
+          width: 100%;
+          padding: 0px 20px;
+      }
+
+      .fun-card .fun-text {
+          width: 100%;
+          padding: 0px 20px;
+      }
+
+      .server h1 {
+        width: 100%;
+    }
+
+
+  }
